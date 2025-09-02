@@ -1,69 +1,74 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Efendi Shop</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fff; color: #000; }
-        header { text-align: center; padding: 20px; font-size: 32px; font-weight: bold; }
-        nav { text-align: center; margin: 20px 0; }
-        nav a { margin: 0 15px; text-decoration: none; font-weight: bold; color: #000; }
-        .category { padding: 40px; text-align: center; border-bottom: 1px solid #eee; }
-        .product { display: inline-block; margin: 15px; border: 1px solid #ddd; padding: 10px; width: 200px; }
-        .product img { width: 100%; height: auto; }
-        .whatsapp-btn { display: inline-block; margin-top: 10px; padding: 10px 15px; background: #25D366; color: white; text-decoration: none; border-radius: 5px; }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>Efendi</header>
-    <nav>
-        <a href="#sneakers">Sneakers</a>
-        <a href="#jackets">Jackets</a>
-        <a href="#tshirts">T-Shirts & Polos</a>
-        <a href="#jeans">Jeans & Pants</a>
-        <a href="#bags">Bags & Accessories</a>
-    </nav>
+    <header>
+        <h1>Efendi</h1>
+        <nav>
+            <ul>
+                <li><a href="#sneakers">Sneakers</a></li>
+                <li><a href="#jackets">Jackets</a></li>
+                <li><a href="#tshirts">T-Shirts & Polos</a></li>
+                <li><a href="#jeans">Jeans & Pants</a></li>
+                <li><a href="#bags">Bags & Accessories</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div id="sneakers" class="category">
-        <h2>Sneakers</h2>
-        <div class="product">
-            <img src="images/sneaker1.jpg" alt="Sneaker">
-            <a class="whatsapp-btn" href="https://wa.me/41795512377">Order via WhatsApp</a>
-        </div>
-    </div>
+    <main>
+        <section id="sneakers">
+            <h2>Sneakers</h2>
+            <div class="product">
+                <img src="images/sneaker1.jpg" alt="Sneaker">
+                <p>Cool Sneaker</p>
+                <a class="whatsapp" href="https://wa.me/41795512377">Order via WhatsApp</a>
+            </div>
+        </section>
 
-    <div id="jackets" class="category">
-        <h2>Jackets</h2>
-        <div class="product">
-            <img src="images/jacket1.jpg" alt="Jacket">
-            <a class="whatsapp-btn" href="https://wa.me/41795512377">Order via WhatsApp</a>
-        </div>
-    </div>
+        <section id="jackets">
+            <h2>Jackets</h2>
+            <div class="product">
+                <img src="images/jacket1.jpg" alt="Jacket">
+                <p>Stylish Jacket</p>
+                <a class="whatsapp" href="https://wa.me/41795512377">Order via WhatsApp</a>
+            </div>
+        </section>
 
-    <div id="tshirts" class="category">
-        <h2>T-Shirts & Polos</h2>
-        <div class="product">
-            <img src="images/tshirt1.jpg" alt="T-Shirt">
-            <a class="whatsapp-btn" href="https://wa.me/41795512377">Order via WhatsApp</a>
-        </div>
-    </div>
+        <section id="tshirts">
+            <h2>T-Shirts & Polos</h2>
+            <div class="product">
+                <img src="images/tshirt1.jpg" alt="T-Shirt">
+                <p>Classic T-Shirt</p>
+                <a class="whatsapp" href="https://wa.me/41795512377">Order via WhatsApp</a>
+            </div>
+        </section>
 
-    <div id="jeans" class="category">
-        <h2>Jeans & Pants</h2>
-        <div class="product">
-            <img src="images/jeans1.jpg" alt="Jeans">
-            <a class="whatsapp-btn" href="https://wa.me/41795512377">Order via WhatsApp</a>
-        </div>
-    </div>
+        <section id="jeans">
+            <h2>Jeans & Pants</h2>
+            <div class="product">
+                <img src="images/jeans1.jpg" alt="Jeans">
+                <p>Denim Jeans</p>
+                <a class="whatsapp" href="https://wa.me/41795512377">Order via WhatsApp</a>
+            </div>
+        </section>
 
-    <div id="bags" class="category">
-        <h2>Bags & Accessories</h2>
-        <div class="product">
-            <img src="images/bag1.jpg" alt="Bag">
-            <a class="whatsapp-btn" href="https://wa.me/41795512377">Order via WhatsApp</a>
-        </div>
-    </div>
+        <section id="bags">
+            <h2>Bags & Accessories</h2>
+            <div class="product">
+                <img src="images/bag1.jpg" alt="Bag">
+                <p>Luxury Bag</p>
+                <a class="whatsapp" href="https://wa.me/41795512377">Order via WhatsApp</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Efendi. All rights reserved.</p>
+    </footer>
 </body>
 </html>
