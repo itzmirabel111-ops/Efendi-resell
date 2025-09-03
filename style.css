@@ -1,15 +1,32 @@
-:root{--bg:#000;--accent:#0ea365;--card:#111;--text:#f1f5f9}
-*{box-sizing:border-box}html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif}
-.site-header{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;background:#0b0b0b;border-bottom:1px solid #121212}
+
+:root{
+  --bg:#000000;
+  --card:#0d0f11;
+  --text:#f5f7fa;
+  --muted:#a7b0b8;
+  --accent:#0ea365;
+  --border:#171a1d;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif}
+header{display:flex;align-items:center;gap:14px;justify-content:space-between;padding:14px 18px;background:#0b0b0b;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:10}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none}
-.brand img{height:38px}
+.brand img{height:44px}
 .brand span{color:var(--accent);font-weight:700;letter-spacing:1px}
-.nav{display:flex;gap:12px}
+.nav{display:flex;gap:10px;flex-wrap:wrap}
 .nav a{color:#d8d8d8;text-decoration:none;font-size:14px;padding:6px 10px;border-radius:6px;border:1px solid transparent}
 .nav a:hover{border-color:var(--accent);color:#fff}
 .container{max-width:1200px;margin:0 auto;padding:22px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
-.card{background:var(--card);border:1px solid #1e1e1e;border-radius:12px;overflow:hidden;text-align:center;padding:14px}
-.card img{width:100%;height:160px;object-fit:contain;display:block;padding:10px}
-.card h2{margin:10px 0 0;font-size:18px;color:var(--text)}
-.footer{padding:24px;text-align:center;color:#9aa4ae;border-top:1px solid #121212}
+h1{margin:0 0 8px 0}
+h2{color:var(--accent);margin:24px 0 8px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px;margin-top:12px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden}
+.card a.thumb{display:block;line-height:0}
+.card img{width:100%;height:180px;object-fit:cover}
+.card .info{padding:10px}
+.card .title{font-size:14px;font-weight:600;margin:0 0 8px 0}
+.card .cta{display:inline-block;background:var(--accent);color:#03150d;text-decoration:none;padding:8px 10px;border-radius:8px;font-size:13px}
+.card .cta:hover{filter:brightness(1.05)}
+.section{margin-top:26px}
+footer{padding:22px;text-align:center;color:var(--muted);border-top:1px solid var(--border);margin-top:24px}
+.note{color:var(--muted);font-size:13px}
