@@ -1,29 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Fashion Store</title>
+<html lang="en"><head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>EFENDI – Home</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
-    <h1>My Fashion Store</h1>
-    <nav>
+    <a class="brand" href="index.html"><img src="logo.png" alt="EFENDI Logo"><span>EFENDI</span></a>
+    <nav class="nav">
       <a href="index.html">Home</a>
       <a href="sneakers.html">Sneakers</a>
+      <a href="jackets.html">Jackets</a>
+      <a href="bags.html">Bags</a>
     </nav>
   </header>
-  <main>
-    <section class="categories">
-      <h2>Categories</h2>
-      <div class="category">
-        <a href="sneakers.html">👟 Sneakers</a>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2025 My Fashion Store</p>
-  </footer>
+
+<main class="container">
+  <h1>Welcome to Efendi – Designer Fashion</h1>
+  <p class="note">Explore premium sneakers, winter jackets, and designer bags. Choose a category below.</p>
+  <div class="grid">
+    <a class="card" href="sneakers.html">
+      <img src="images/sneakers/sneaker-01.jpg" alt="Sneakers">
+      <div class="info"><p class="title">Sneakers</p><span class="cta">Open</span></div>
+    </a>
+    <a class="card" href="jackets.html">
+      <img src="logo.png" alt="Winter Jackets">
+      <div class="info"><p class="title">Winter Jackets</p><span class="cta">Open</span></div>
+    </a>
+    <a class="card" href="bags.html">
+      <img src="logo.png" alt="Designer Bags">
+      <div class="info"><p class="title">Designer Bags</p><span class="cta">Open</span></div>
+    </a>
+  </div>
+</main>
+<footer>© 2025 EFENDI · WhatsApp: +41 79 551 23 77</footer>
 </body>
 </html>
